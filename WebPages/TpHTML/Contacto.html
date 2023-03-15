@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../TpCSS/Estilos.css">
+    <link rel="icon" href="../Icons/Principal.png">
+    <title>Trabaja para nosotros</title>
+</head>
+<noscript>Usted no tiene habilitado JavaScript o su navegador no es compatible, algunas funciones podrían no funcionar.</noscript>
+<body>
+
+    <header id="header">
+
+        <!-- Comienza POP UP-->
+
+        <div class="container-all" id="modal">
+            <div class="popup">
+                <div class="img"></div>
+                <div class="container-text">
+                    <h1>Déjanos contactarte.</h1>
+                    <input id="No" type="text" placeholder="Nombre y apellido" class="Datos" required spellcheck="true">
+                    <input id="Ci" type="date" placeholder="Fecha de nacimiento" class="Datos" required>
+                    <input id="Di" type="text" placeholder="Dirección" class="Datos" required>
+                    <input id="Te" type="number" placeholder="Teléfono" class="Datos" required>
+                    <input id="Ge" type="text" placeholder="Género" class="Datos" required maxlength="1">
+                    <input id="Ma" type="email" placeholder="Mail" class="Datos" required>
+                    <input id="Su" type="text" placeholder="Sugerencias" class="Datos" required>
+                    <select class="Datos">
+                        <option selected value="0">Selecciona un horario disponible</option>
+                        <optgroup label="Horarios">
+                           <option value="1">Semana</option>
+                           <option value="2">Fines de semana</option>
+                           <option value="3">Toda la semana en el día</option>
+                           <option value="4">Todo el fin de semana en el día</option>
+                           <option value="5">Horario nocturno en semana</option>
+                           <option value="6">Horario nocturno los fines de semana</option>
+                        </optgroup>
+                     </select>
+                    <a href="#" class="enviar" onclick="EliminarYEnviar()">Enviar</a>
+                    <a  class="limpiar" onclick="Eliminar()">Limpiar</a>
+                </div>
+                <a href="#" class="btn-close-popup">X</a>
+            </div>
+        </div>
+
+        <nav class="Nuevo__Nav">
+            <div class="nav_bar">
+                <ul>
+                    <img src="../Icons/Inicio.png" alt="">
+                    <li><a href="../TpHTML/Index.html">Inicio</a></li>
+                    <li><a href="../TpHTML/Compra.html">Compra</a></li>
+                    <li><a href="../TpHTML/Contacto.html">Contacto</a></li>
+                    <li><a href="../TpHTML/Acerca.html">Acerca</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+
+        <!-- Termina POP UP-->
+
+    <div class="container__all">
+        <div class="cover">
+            <div class="container__cover">
+                <div class="container__info">
+                    <h1>TRABAJA</h1>
+                    <h2>CON</h2>
+                    <h2>NOSOTROS</h2>
+                    <p>Somos una empresa en una constante búsqueda de amor por el planeta y por la miel  que viene desempeñando esta importante <br>labor por 23 años 
+                    y esperamos seguir por muchos más. <br> si estás interesad@ en participar en un proceso de selección, por favor oprime el botón <i>Empieza</i></p>
+                    <input type="button" value="Empieza">
+                    <a href="../TpPHP/" class="btn-open-popup">Empieza</a>
+                </div>
+
+                <div class="container__vector">
+                    <img src="../Icons/Portada.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- CONTENIDO -->
+<div class="todo">
+<div class="fila2">
+    <div class="colu">
+        <h1>Empieza a trabajar con nosotros</h1>
+        <p>Queremos contar tu ayuda para poder sembrar la semilla de este amor y trabajo arduo <br> por nuestros hijos y su futuro.
+        Aplica ahora.</p>
+    </div>
+    <div class="colu">
+        <img src="../Images/Contratos.jpg">
+    </div>
+</div>
+
+<div class="fila2">
+    <div class="colu">
+        <h1>Contamos con excelentes contratos</h1>
+        <p>Además de un excelente clima laboral, en el cual podrás <br> conocer a personas de otros países, culturas y conocimientos obsequiados a travez de los años.</p>
+    </div>
+    <div class="colu">
+        <img src="../Images/Carrusel3.jpg">
+    </div>
+</div>
+
+</div>
+
+
+<!-- CONTENIDO -->
+<section class="mapa">
+    <h3>Puedes encontrarnos en...</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.48592366493!2d-75.57468712827585!3d6.247718720828868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fecb4dff77%3A0x2e5a7e51ab929892!2sPlaza%20Botero%20-%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1651297695748!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+    <!-- Aquí comienza el pie de página -->
+    <section class="pie-pagina">
+        <h4>Acerca de nosotros</h4>
+        <p>Somos la empresa apícola más grande de colombia, con 1.112 empleados, quien día a día, hacen su mejor esfuerzo por <br> llevarte los mejores productos, para tu salud, disfrute y cuidados.</p>
+            <div class="iconos">
+                <i class="fa fa-facebook"  onclick="facebook()"></i>
+            <i class="fa fa-twitter" onclick="twitter()"></i>
+            <i class="fa fa-instagram" onclick="instagram()"></i>
+            <i class="fa fa-linkedin" onclick="linkedin()"></i>
+            <i class="fa fa-github" onclick="github()"></i>
+            </div>
+            <p>Derechos reservados por <img src="../Icons/Majestic.ico"> MajesticDM©</p>
+    </section>
+    <!-- Aquí termina el pie de página -->
+
+
+
+    <script src="../TpJS/Funciones.js"></script>
+    <script src="https://kit.fontawesome.com/a0e2325b43.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

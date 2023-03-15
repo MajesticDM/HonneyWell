@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <title>Compras</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../TpCSS/Estilos.css">
+    <link rel="icon" href="../Icons/Principal.png">
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<div class="se-pre-con"></div>
+<noscript>Usted no tiene habilitado JavaScript o su navegador no es compatible, algunas funciones podrían no funcionar.</noscript>
+<body>
+    <header id="header">
+        <nav class="Nuevo__Nav">
+            <div class="nav_bar">
+                <ul>
+                    <li><a href="../TpHTML/Index.html">Inicio</a></li>
+                    <li><a href="../TpHTML/Compra.html">Compra</a></li>
+                    <li><a href="../TpHTML/Contacto.html">Contacto</a></li>
+                    <li><a href="../TpHTML/Acerca.html">Acerca</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="tituloCom">
+        <div class="titu">
+            <h1>Compra a los mejores precios</h1>
+            <p>Herramientas, productos y mucho m&aacute;s...</p>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="boton-comprar" class="BotonComprar"><a href="../TpHTML/CompraEnvio.html">Realizar compra</a></button>
+            </aside>
+        </div>
+    </div>
+    <section class="pie-pagina">
+        <h4>Acerca de nosotros</h4>
+        <p>Somos la empresa apícola más grande de colombia, con 1.112 empleados, quien día a día, hacen su mejor
+            esfuerzo por <br> llevarte los mejores productos, para tu salud, disfrute y cuidados.</p>
+        <div class="iconos">
+            <i class="fa fa-facebook" onclick="facebook()"></i>
+            <i class="fa fa-twitter" onclick="twitter()"></i>
+            <i class="fa fa-instagram" onclick="instagram()"></i>
+            <i class="fa fa-linkedin" onclick="linkedin()"></i>
+            <i class="fa fa-github" onclick="github()"></i>
+        </div>
+        <p>Derechos reservados por <img src="../Icons/Majestic.ico"> MajesticDM©</p>
+    </section>
+</body>
+<script src="../TpJS/Funciones.js"></script>
+<script src="https://kit.fontawesome.com/a0e2325b43.js" crossorigin="anonymous"></script>
+
+</html>

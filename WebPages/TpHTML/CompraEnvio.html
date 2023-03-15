@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../TpCSS/Estilos.css">
+  <link rel="icon" href="../Icons/Principal.png">
+  <title>Compra y recibe</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<div class="se-pre-con"></div>
+<noscript>Usted no tiene habilitado JavaScript o su navegador no es compatible, algunas funciones podrían no funcionar.</noscript>
+<body>
+  <header id="header">
+    <nav class="Nuevo__Nav">
+      <div class="nav_bar">
+        <ul>
+          <li><a href="../TpHTML/Index.html">Inicio</a></li>
+          <li><a href="../TpHTML/Compra.html">Compra</a></li>
+          <li><a href="../TpHTML/Contacto.html">Contacto</a></li>
+          <li><a href="../TpHTML/Acerca.html">Acerca</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="contact_form">
+
+    <div class="formulario">
+      <h1>Formulario de contacto</h1>
+      <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+      <p>
+        <label for="nombre" class="colocar_nombre">Nombre
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+          placeholder="Escribe tu nombre completo">
+      </p>
+
+      <p>
+        <label for="email" class="colocar_email">Email
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Ejm: correo@mail.com">
+      </p>
+
+      <p>
+        <label for="telefone" class="colocar_telefono">Teléfono
+        </label>
+        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+      </p>
+
+      <p>
+        <label for="mensaje" class="colocar_mensaje">Departamento - Ciudad
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="mensaje" id="mensaje" placeholder="Ejm: Antioquia - Medellín">
+      </p>
+
+      <p>
+        <label for="direccion" class="colocar_website">Dirección
+        </label>
+        <input type="text" name="direccion" id="direccion" placeholder="Ejm: Carrera 1 #2 Sur - 3 Norte">
+      </p>
+
+      <p>
+        <label for="asunto" class="colocar_asunto">Indicaciones
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+          placeholder="Ejm: Torre 5 Apto 4512">
+      </p>
+
+      <button type="submit" name="enviar_formulario" id="enviar" class="BotonComprar" onclick="MostrarTarjetaAzul()">
+        <p>Pago online</p>
+      </button>
+      <button type="submit" id="contraentrega" class="BotonComprar" onclick="GuardarCompra()">
+        <p>Pago contraentrega</p>
+      </button>
+
+      <p class="aviso">
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+      </p>
+    </div>
+  </div>
+  <section class="main flex">
+
+    <section class="cardT" id="cardT">
+
+      <section id="pointer"></section>
+
+      <section class="card1">
+        <div class="imgs">
+          <img src="../Images/chip.png" width="50px">
+          <img src="../Images/visa.png" width="70px">
+        </div>
+        <ul id="snum">
+          <li>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+          </li>
+          <li>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+          </li>
+          <li>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+          </li>
+          <li>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+            <span class="stars1"><label class="star">#</label><label class="label">1</label></span>
+          </li>
+        </ul>
+        <div class="details">
+          <div class="name" id="sname">
+            <span>Dueño de la tarjeta</span>
+            <div class="full" id="cha_name">
+              <label>NOMBRE COMPLETO</label>
+            </div>
+          </div>
+          <div class="date" id="sdate">
+            <span>Vence</span>
+            <div class="my">
+              <label id="mm_set">
+                <div class="mm">MM</div>
+                <div class="yy" id="cha_m">01</div>
+              </label>
+              <label id="yy_set">
+                <div class="mm">YY</div>
+                <div class="yy" id="cha_y">2030</div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="back1">
+        <img src="../Images/visa.png" width="75px">
+        <p id="scvv">
+          <span>CVV</span>
+          <label>***</label>
+        </p>
+      </section>
+
+    </section>
+
+    <form id="add_cc">
+
+      <div class="inin">
+
+        <input type="number" autocomplete="off" placeholder="Número de la tarjeta" oninput="write1(0,this)"
+          onclick="write1(0,this)" min="1000000000000000" max="9999999999999999" required style="width:95%;">
+
+        <input type="text" autocomplete="off" required pattern="[A-Z\sa-z]+" placeholder="Dueño de la tarjeta"
+          oninput="write1(1,this)" onclick="write1(1,this)" maxlength="20" style="width:95%;">
+
+      </div>
+
+      <div class="in">
+
+        <input list="months" required pattern="[0-9][0-9]" style="width:100px" placeholder="MM" maxlength="2"
+          oninput="write1(2,this)" onclick="write1(2,this)">
+
+        <datalist id="months">
+          <option value="01">
+          <option value="02">
+          <option value="03">
+          <option value="04">
+          <option value="05">
+          <option value="06">
+          <option value="07">
+          <option value="08">
+          <option value="09">
+          <option value="10">
+          <option value="11">
+          <option value="12">
+        </datalist>
+
+        <input type="number" autocomplete="off" required pattern="20+[0-9]{2}" placeholder="YY" style="width:100px"
+          oninput="write1(3,this)" onclick="write1(3,this)" min="2021">
+
+        <input type="password" autocomplete="off" required pattern="[0-9]{3}" maxlength="3" placeholder="CVV"
+          style="width:100px" oninput="write1(4,this)" onclick="write1(4,this)">
+
+      </div>
+<!-- 
+      <button class="BotonComprar" onclick="ConfirmarCompra()">Confirmar Compra</button> -->
+      <button type="submit" class="BotonComprar">
+        <p>Confirmar Compra</p>
+      </button>
+
+    </form>
+
+</html>
+
+</body>
+<script src="../TpJS/Funciones.js"></script>
+<script src="https://kit.fontawesome.com/a0e2325b43.js" crossorigin="anonymous"></script>
+<script src="../TpJS/Sweetalert.js"></script>
+
+</html>

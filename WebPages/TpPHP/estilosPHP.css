@@ -1,0 +1,75 @@
+body,
+html {
+    font-family: 'Raleway', sans-serif;
+    background: rgba(235, 235, 235, 0.986);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.sedes {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sedes-columnas {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sedes-columnas img {
+    width: 100%;
+    display: block;
+}
+
+.parte {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.parte:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.parte h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.parte:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.fila {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+
+}
